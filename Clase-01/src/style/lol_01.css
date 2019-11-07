@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: white;
+}
+
+header{
+	width: 100%;
+}
+/*logo*/
+.logo{
+    padding: 20px 16px 0px;
+}
+
+.navegacion{
+	margin: 0px auto;
+	background: #5f5f5f;
+}
+
+.navegacion ul{
+    list-style: none;
+    height: 44px;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+.menu > li > i{
+	padding: 10px 15px 9px;
+}
+
+
+.menu > li > a{
+	display: block;
+	padding: 10px 15px 9px;
+	color: #f1f1f1;
+	font-family: "Segoe UI",Arial,sans-serif;
+	text-decoration: none;
+}
+
+/* COLOR LETRA SUBRE MAUSE*/
+.menu li a:hover{
+	color: rgb(120, 236, 91);
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #5f5f5f;
+    width: 120%;
+    height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #f1f1f1;
+	font-family: "Segoe UI",Arial,sans-serif;
+	text-decoration: none;
+	background-color: #5f5f5f;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*-MENU LATERAL <--*/
+
+.menu-lateral ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 16%;
+  background-color: #f1f1f1!important;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.menu-lateral li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.menu-lateral li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.menu-lateral li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
